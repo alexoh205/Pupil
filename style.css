@@ -1,0 +1,297 @@
+@font-face {
+    src: url(Helvetica.ttf);
+    font-family: Helvetica;
+}
+* {
+    margin: 0;
+    padding: 0;
+}/*reset code*/
+h2 {
+    font-family: 'Comfortaa', cursive;
+    font-style: normal;
+    text-align: center;
+    text-decoration: underline;
+    color: #C20401;
+}
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    text-align: center;
+    text-decoration: underline;
+    line-height: 100px;
+}
+.headers {
+    font-size: 24px;
+    line-height: 40px;
+    margin-top: 20px;
+}
+ul {
+    text-align: center;
+}
+p {
+    font-family: Helvetica;
+    font-size: 20px;
+    text-indent: 30px;
+    line-height: 24px;
+    text-align: justify;
+}
+.main {
+    margin-top: 100px;
+}
+.contact_info {
+    line-height: 30px;
+}
+.Bios {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+}
+.form {
+    text-indent: 0px;
+    line-height: 40px;
+}
+/* .buttons {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #00E2FF;
+    font-family: Open Sans;
+    font-size: 26px;
+    font-weight: 100;
+    padding: 15px;
+    background-color: #000000;
+    box-shadow: 1px 1px 20px 0px #000000;
+    -webkit-box-shadow: 1px 1px 20px 0px #000000;
+    -moz-box-shadow: 1px 1px 20px 0px #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #00E2FF 7px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.buttons:hover {
+    background: #00E2FF;
+    border: solid #00E2FF 5px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    text-decoration: none;
+} */
+.buttons {
+    display: block;
+    width: 500px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: all .35s;
+    margin: auto;
+}
+.buttons span {
+    position: relative;
+    z-index: 2;
+}
+.buttons:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+}
+.buttons:hover {
+    color: #fff;
+}
+.buttons:hover:after {
+    width: 100%;
+}
+.images {
+    text-align: center;
+}
+div#Title {
+    background-color: #10044A;
+}
+p#promise {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    color: black;
+    line-height: 200%;
+    font-size: 50px;
+}
+div#Title {
+    text-align: center;
+}
+p#about_us {
+    font-family: 'Comfortaa', cursive;
+    line-height: 1.5;
+    color: black;
+    height: 700px;
+}
+#saying {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 50px;
+    text-align: center;
+}
+.background {
+    background-color: cornsilk;
+    background-size: cover;
+}
+.button {
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5d4954;
+    font-family: 'Poppins', sans-serif;
+}
+.logo {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%; /*You can play around with the width */
+}
+.nav-links li {
+    list-style: none; /*Removing the bullet points*/
+}
+.nav-links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 29px 24px;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.nav-links a.active {
+    color: #5d4954;
+    background-color: rgb(226, 226, 226);
+}
+@media screen and (max-width:1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5d4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links a {
+        padding: 29px 160px;
+    }
+    .burger {
+        display: block;
+    }
+}
+@media screen and (max-width: 704px) {
+    .nav-links a {
+        padding: 29px 143px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .nav-links a {
+        padding: 29px 126px;
+    }
+}
+@media screen and (max-width: 512px) {
+    .nav-links a {
+        padding: 29px 95px;
+    }
+}
+@media screen and (max-height:768px) and (min-width: 768.1px) {
+    .nav-links a {
+        padding: 20px 24px;
+    }
+}
+@media screen and (max-height:512px) and (min-width: 768.1px) {
+    .nav-links a {
+        padding: 9px 24px;
+    }
+}
+@media screen and (max-height:320px) and (min-width:768.1px) {
+    .nav-links a {
+        padding: 3px 24px;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

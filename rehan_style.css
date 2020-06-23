@@ -1,0 +1,12 @@
+body {
+    background-image: url('rehan_image.jpg');
+}
+p {
+    font-family: Orbitron, "Helvetica Neue", Arial;
+    color: #1D95AB;
+    display: block;
+}
+button {
+    border-radius: 15px;
+    border: 3px solid #AD071E;
+}
