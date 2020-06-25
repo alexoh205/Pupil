@@ -43,13 +43,27 @@ p {
     line-height: 30px;
 }
 .Bios {
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 400px;
+    margin-right: 400px;
     margin-top: 20px;
 }
 .form {
     text-indent: 0px;
     line-height: 40px;
+}
+form .submit {
+    background: #ff5722;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+form .submit:hover {
+    background-color: #f44336;
+    cursor: pointer;
 }
 .buttons {
     display: block;
@@ -91,6 +105,7 @@ p {
 }
 div#Title {
     background-color: #10044A;
+    text-align: center;
 }
 p#promise {
     text-align: center;
@@ -98,9 +113,6 @@ p#promise {
     color: black;
     line-height: 200%;
     font-size: 50px;
-}
-div#Title {
-    text-align: center;
 }
 p#about_us {
     font-family: 'Comfortaa', cursive;

@@ -164,9 +164,9 @@
         <script src="app.js"></script>
         <div class="main">
             <div class="container">
-                <form action="contact-form-handler.php" method="post" style="margin-top: 50px">
+                <form method="post" action="contact-form-handler.php" style="margin-top: 50px">
                     <div class="group">
-                        <input type="text" name="name" required>
+                        <input name="name" type="text" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label>Name</label>
@@ -183,7 +183,7 @@
                         <span class="bar"></span>
                         <label>Question</label>
                     </div>
-                    <button type="submit" name="submit" class="form-control submit" onclick="submited()">SEND QUESTION</button>
+                    <input type="submit" class="form-control submit" value="SEND QUESTION" onclick="submited()">
                 </form>
             </div>
         </div>
