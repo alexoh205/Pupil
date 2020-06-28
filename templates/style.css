@@ -60,6 +60,8 @@ form .submit {
     letter-spacing: 2px;
     height: 50px;
     margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 form .submit:hover {
     background-color: #f44336;
