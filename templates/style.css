@@ -1,5 +1,5 @@
 @font-face {
-    src: url(Helvetica.ttf);
+    src: url(../fonts/Helvetica.ttf);
     font-family: Helvetica;
 }
 * {
@@ -164,6 +164,9 @@ nav {
     letter-spacing: 5px;
     font-size: 20px;
     text-decoration: none;
+}
+.dropdown-content {
+    line-height: 50px;
 }
 .nav-links {
     display: flex;
