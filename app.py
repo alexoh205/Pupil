@@ -1,6 +1,6 @@
 from flask import Flask, render_template  # Render template thingie allows you to render html with urls
 
-app = Flask(__name__) #  Creating a Flask object called app or our localhost server
+app = Flask(__name__) #  Creating a Flask object called app
 @app.route('/')
 def homepage_render():
     return render_template('index.html')
@@ -26,14 +26,8 @@ def q_n_a_render():
     return render_template('q_n_a.html')
 
 
-error = [
-    {
-
-    }
-]
-
-#  404 errors handler
-@app.errorhandler('404')
-def not_found_render(e):
-    return render_template('not_found_error.html')
-    error.append({404: 404})
+@app.route('/<error: str>')
+@app.route('/<error: int>')
+@app.route('/<error: float>')
+def page_not_found_render():
+    return render_template('404_error.html')
