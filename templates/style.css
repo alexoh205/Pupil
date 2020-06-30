@@ -199,9 +199,19 @@ nav {
     color: #5d4954;
     background-color: rgb(226, 226, 226);
 }
+@media screen and (max-width:1536px) {
+    .Bios {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
 @media screen and (max-width:1024px) {
     .nav-links {
         width: 60%;
+    }
+    .Bios {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 @media screen and (max-width:768px) {
