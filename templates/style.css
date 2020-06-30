@@ -34,7 +34,6 @@ p {
     font-size: 20px;
     text-indent: 30px;
     line-height: 24px;
-    text-align: justify;
 }
 .main {
     margin-top: 100px;
@@ -46,6 +45,7 @@ p {
     margin-left: 400px;
     margin-right: 400px;
     margin-top: 20px;
+    text-align: justify;
 }
 .form {
     text-indent: 0px;
@@ -55,6 +55,7 @@ form .submit {
     background: #ff5722;
     border-color: transparent;
     color: #fff;
+    font-family: 'Helvetica', sans-serif;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -249,6 +250,9 @@ nav {
 @media screen and (max-width: 640px) {
     .nav-links a {
         padding: 29px 126px;
+    }
+    .contact_info {
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 512px) {
